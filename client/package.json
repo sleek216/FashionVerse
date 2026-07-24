@@ -4,11 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "vite build",
+    "build": "node init && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "node server.js",
-    "dev": "vite",
+    "start": "node init && node server.js",
+    "dev": "node init && vite",
     "compress:mall": "npx --yes @gltf-transform/cli optimize ../model/mall/mall_model.glb public/models/mall/mall_model_web.glb --compress meshopt --texture-compress webp --texture-size 512"
   },
   "dependencies": {
